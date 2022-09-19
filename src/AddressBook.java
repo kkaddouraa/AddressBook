@@ -39,5 +39,12 @@ public class AddressBook
     public static void main(String[] args)
     {
         System.out.println("Address Book");
+        AddressBook book = new AddressBook();
+        BuddyInfo buddy = new BuddyInfo();
+
+        book.addBuddy(buddy);
+        System.out.println("The buddy has been added.");
+        book.removeBuddy(buddy);
+        System.out.println("The buddy has been removed.");
     }
 }
