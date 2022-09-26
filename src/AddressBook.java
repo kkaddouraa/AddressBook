@@ -22,15 +22,22 @@ public class AddressBook
      */
     public void addBuddy(BuddyInfo buddy)
     {
-        buddyBook.add(buddy);
+        if (buddy != null)
+        {
+            buddyBook.add(buddy);
+        }
     }
 
     /**
      * Removes a buddy's info from the address book.
      */
-    public void removeBuddy(BuddyInfo buddy)
+    public BuddyInfo removeBuddy(int index)
     {
-        buddyBook.remove(buddy);
+        if (index >= 0 && index < buddyBook.size())
+        {
+            return buddyBook.remove(index);
+        }
+        return null;
     }
 
     /**
@@ -44,7 +51,8 @@ public class AddressBook
 
         book.addBuddy(buddy);
         System.out.println("The buddy has been added.");
-        book.removeBuddy(buddy);
+        book.removeBuddy(0);
         System.out.println("The buddy has been removed.");
+        //asd
     }
 }
