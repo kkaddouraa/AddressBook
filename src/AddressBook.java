@@ -40,6 +40,11 @@ public class AddressBook
         return null;
     }
 
+    public void printTwo()
+    {
+        System.out.println(2);
+    }
+
     /**
      * Prints "Address Book".
      */
@@ -53,6 +58,6 @@ public class AddressBook
         System.out.println("The buddy has been added.");
         book.removeBuddy(0);
         System.out.println("The buddy has been removed.");
-        //new changes
+        book.printTwo();
     }
 }
