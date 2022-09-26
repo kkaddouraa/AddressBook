@@ -53,6 +53,6 @@ public class AddressBook
         System.out.println("The buddy has been added.");
         book.removeBuddy(0);
         System.out.println("The buddy has been removed.");
-        //asd
+        //asdawqe
     }
 }
