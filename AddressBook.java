@@ -1,3 +1,9 @@
+/**
+ * Lab 2
+ * Kareem Kaddoura (101140255)
+ * Sep. 19, 2024
+ */
+
 import java.util.ArrayList;
 
 public class AddressBook {
@@ -8,7 +14,8 @@ public class AddressBook {
      * Create address book.
      */
     public AddressBook() {
-        book = new ArrayList<>();}
+        book = new ArrayList<>();
+    }
 
     /**
      * Add buddy to book.
