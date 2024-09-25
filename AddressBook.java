@@ -38,5 +38,7 @@ public class AddressBook {
 
         ab.addBuddy(buddy);
         ab.removeBuddy(buddy);
+
+        // Lab 3 Step 17
     }
 }
