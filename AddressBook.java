@@ -17,6 +17,11 @@ public class AddressBook {
         book = new ArrayList<>();
     }
 
+    public void getBuddyAddress (BuddyInfo buddy) {
+        System.out.println(buddy.getName() + "'s Address: " +
+                buddy.getAddress());
+    }
+
     /**
      * Add buddy to book.
      */
@@ -37,6 +42,7 @@ public class AddressBook {
         BuddyInfo buddy = new BuddyInfo();
 
         ab.addBuddy(buddy);
+        ab.getBuddyAddress(buddy);
         ab.removeBuddy(buddy);
 
         // Lab 3 Step 17
